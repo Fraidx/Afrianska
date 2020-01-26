@@ -9,7 +9,7 @@ function modal(){
     closebtn.addEventListener('click', () => {
         modal.classList.toggle('opened')
         openbtn.style.display = "block"
-        document.body.style.overflowY = "scroll";
+        document.body.style.overflowY = "auto";
     })
 
     openbtn.addEventListener('click', () => {

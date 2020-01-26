@@ -1,5 +1,5 @@
 body{
-    min-height: 1000px;
+    min-height: 100vh;
     box-sizing: border-box;
 }
 .modal{
@@ -40,7 +40,7 @@ body{
         width: 1200px;
         max-width: 1200px;
         height: 48px;
-        &__logo,&__menu{
+        &__menu{
             cursor: pointer;
         }
     }
