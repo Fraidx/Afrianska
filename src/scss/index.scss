@@ -1,0 +1,112 @@
+body{
+    min-height: 1000px;
+    box-sizing: border-box;
+}
+.modal{
+    display: none;
+    background: rgba(255,255,255,.8);
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .close{
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 23px;
+        top: 30px;
+        right: 45px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &.opened{
+        display: block;
+    }
+}
+.section-hero{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 768px;
+    background: linear-gradient(0deg, rgba(152, 195, 232,.2) 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    &-navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px auto;
+        width: 1200px;
+        max-width: 1200px;
+        height: 48px;
+        &__logo,&__menu{
+            cursor: pointer;
+        }
+    }
+    &-content{
+        margin: 0 auto;
+        width: 1140px;
+        display: flex;
+        &-text{
+            width: 510px;
+            flex-shrink: 0;
+            &__title{
+                margin-top: 89px;
+            }
+            &__subtitle{
+                margin-top: 32px;
+            }
+            &__btn.position{
+                margin-top: 71px;
+            }
+            &__btn.hover{
+                transition: all .4s;
+                &:hover{
+                    border: 1px solid rgba(90, 152, 208,1);
+                    background: none;
+                    color: rgba(90, 152, 208,1);
+                    cursor: pointer;
+                }
+            }
+            &__btn{
+                color: #fff;
+                letter-spacing: 1px;
+                font-family: sans-serif;
+                outline: none;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(90, 152, 208,1);
+                border-radius: 10px;
+                width: 213px;
+                height: 56px;
+            }
+        }
+        &-picture{
+           .border{
+               animation: forBorderSvg 3s infinite alternate-reverse;
+           }
+           .homeSvg{
+                animation: forHomeSvg 1.2s infinite alternate-reverse;
+           }
+        }
+    }
+}
+@keyframes forBorderSvg{
+    0%{
+        transform: rotateZ(2deg);
+    }
+    100%{
+        transform: rotateZ(-2deg);
+    }
+}
+@keyframes forHomeSvg{
+    0%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
