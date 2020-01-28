@@ -94,6 +94,96 @@ body{
         }
     }
 }
+.section-aboutUs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 180px;
+    &-inner{
+        position: relative;
+        width: 960px;
+        height: 1162px;
+        &-infoBlock{
+            width: 380px;
+            height: 525px;
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+            border-radius: 10px;
+            &-inner{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        &-infoBlock.first{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-infoBlock.second{
+            position: absolute;
+            top: 320px;
+            left: 100px;
+            .picture{
+                position: relative;
+                left: -30px;
+                width: 260px;
+                height: 130px;
+            }
+        }
+        &-infoBlock.third{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            .picture{
+                width: 260px;
+                height: 130px;
+            }
+        }
+        .wrapper{
+            position: relative;
+            width: 257px;
+            margin: 0 auto;
+            &__title{
+                margin-top: 56px;
+                text-align: center;
+            }
+            &__subtitle{
+                font-family: sans-serif;
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.05em;
+                color: #1F3F68;
+                opacity: 0.6;
+            }
+        }
+        .btn{
+            margin-top: 32px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-left: 32px;
+            }
+            a{
+                font-size: 14px;
+                line-height: 30px;
+                letter-spacing: 0.05em;
+                color: #5A98D0;
+                text-decoration: none;
+                &:hover{
+                    color: rgba(90, 152, 208,.8);
+                }
+            }
+        }
+    }
+}
+
+
+
 @keyframes forBorderSvg{
     0%{
         transform: rotateZ(2deg);
