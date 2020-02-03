@@ -1,3 +1,19 @@
+@import "../css/fonts.css";
+@mixin GilroyR {
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  opacity: 0.6;
+}
+@mixin GilroyB {
+  font-family: "Gilroy-Bold";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+}
 body {
   min-height: 100vh;
   box-sizing: border-box;
@@ -20,6 +36,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: all 0.4s;
   .close {
     position: absolute;
     font-family: sans-serif;
@@ -32,6 +49,15 @@ body {
   }
   &.opened {
     display: block;
+    animation: show 0.4s;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /// First Section [section-hero] ///
@@ -69,6 +95,7 @@ body {
         margin-top: 89px;
       }
       &__subtitle {
+        @include GilroyR();
         margin-top: 32px;
       }
       &__btn.position {
@@ -120,6 +147,14 @@ body {
     position: relative;
     width: 960px;
     height: 1162px;
+    &__title {
+      width: 370px;
+      height: 138px;
+      @include GilroyB();
+      color: #316099;
+      font-size: 36px;
+      line-height: 46px;
+    }
     &-infoBlock {
       position: absolute;
       width: 380px;
@@ -159,8 +194,10 @@ body {
       width: 257px;
       margin: 0 auto;
       &__title {
+        width: 300px;
+        height: 60px;
+        @include GilroyB();
         margin-top: 56px;
-        text-align: center;
       }
       &__subtitle {
         font-family: sans-serif;
@@ -208,15 +245,20 @@ body {
       display: flex;
       width: 100%;
       height: 92px;
+      &__title {
+        width: 340px;
+        height: 92px;
+        @include GilroyB();
+        font-size: 36px;
+        line-height: 46px;
+      }
       &__subtitle {
-        font-family: sans-serif;
-        margin-left: 93px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include GilroyR();
         width: 540px;
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: 0.05em;
-        color: #1f3f68;
-        opacity: 0.6;
+        height: 80px;
       }
     }
     &-projects {
@@ -224,13 +266,16 @@ body {
       width: 100%;
       height: 100%;
       &-main {
+        overflow: hidden;
         position: relative;
-        background: url("/Afrianska/src/img/all/bg.png") center;
-        border-radius: 10px;
         width: 940px;
         height: 417px;
+        border-radius: 10px;
+        img {
+          transition: all 0.4s;
+        }
         &:after {
-          background: url("/Afrianska/src/img/svg/Main.svg");
+          background: url("/Afrianska/src/img/svg/Main.svg") center;
           position: absolute;
           top: 0;
           left: 0;
@@ -238,87 +283,40 @@ body {
           width: 100%;
           height: 100%;
         }
-        &__title,
-        &__subtitle {
-          position: relative;
-          z-index: 999;
+        &:hover {
+          cursor: pointer;
+          img {
+            transform: scale(1.1);
+          }
         }
         .wrapper {
+          z-index: 1;
           position: absolute;
-          right: 0;
+          top: 48px;
+          right: 65px;
+          width: 341px;
           display: flex;
           flex-direction: column;
-        }
-        &__title,
-        &__subtitle {
-          display: flex;
-          align-items: center;
-        }
-        &__title {
-          margin-top: 48px;
-          margin-right: 48px;
-          width: 341px;
-          height: 46px;
-        }
-        &__subtitle {
-          margin-top: 8px;
-          margin-right: 48px;
-          align-self: flex-end;
-          width: 234px;
-          height: 46px;
-        }
-      }
-      .wrapper {
-        margin-top: 96px;
-        display: flex;
-        justify-content: space-between;
-        &-secondaryLeft,
-        &-secondaryRight {
-          overflow: hidden;
-          position: relative;
-          border-radius: 10px;
-          width: 422px;
-          height: 417px;
-          &:after {
-            background: linear-gradient(
-              309.18deg,
-              rgba(66, 165, 245, 0.4) -1.71%,
-              rgba(21, 101, 192, 0.6) 74.54%
-            );
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            width: 100%;
-            height: 100%;
+          &__title,
+          &__subtitle {
+            width: 341px;
+            @include GilroyR();
+            color: #fff;
           }
-          .info {
-            margin-top: 24px;
-            margin-left: 32px;
-            position: relative;
-            z-index: 999;
-            &__title {
-              font-family: sans-serif;
-              font-size: 28px;
-              line-height: 46px;
-              letter-spacing: 0.05em;
-              color: #ffffff;
-            }
-            &__subtitle {
-              margin-top: 4px;
-              font-size: 16px;
-              line-height: 46px;
-              letter-spacing: 0.05em;
-              color: #ffffff;
-              opacity: 0.8;
-            }
+          &__title {
+            opacity: 1;
+            font-size: 28px;
+            line-height: 46px;
           }
-        }
-        &-secondaryLeft {
-          background: url("/Afrianska/src/img/all/dribble.png") center;
-        }
-        &-secondaryRight {
-          background: url("/Afrianska/src/img/all/upload.png") center;
+          &__subtitle {
+            margin-top: 8px;
+            align-self: flex-end;
+            text-align: right;
+            font-size: 16px;
+            width: 244px;
+            height: 46px;
+            opacity: 0.8;
+          }
         }
       }
     }
