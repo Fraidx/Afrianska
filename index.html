@@ -11,7 +11,6 @@
     <!--x-- link css and normalize.css --x-->
     <style>
     </style>
-    <link rel="preload" href="./src/css/fonts.css" as="index.min.css">
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/index.min.css">
     <title>Afrianska</title>
@@ -20,21 +19,22 @@
 <body>
     <!--x-- Section-hero --x-->
     <section class="section-hero">
-        <div class="section-hero-navigation">
-            <div class="section-hero-navigation__logo"><img src="./src/img/svg/logo.svg" alt=""></div>
-            <div class="section-hero-navigation__menu"><a href="#"><img id="menu" src="./src/img/svg/menu.svg"
-                        alt=""></a></div>
-        </div>
-        <div class="section-hero-content">
-            <div class="section-hero-content-text">
-                <div class="section-hero-content-text__title"><img
-                        src="./src/img/svg/New Automation Tool for Your Home.svg" alt=""></div>
-                <div class="section-hero-content-text__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus
-                    elit.</div>
-                <button class="section-hero-content-text__btn position hover">See Our Project</button>
+
+        <div class="section-hero__navigation">
+            <div class="section-hero__logo"><img src="./src/img/section-hero/logo.svg" alt=""></div>
+            <div class="section-hero__menu"><img class="menu" src="./src/img/section-hero/menu.svg" alt="">
             </div>
-            <div class="section-hero-content-picture">
+        </div>
+        <div class="section-hero__inner">
+            <div class="section-hero__info">
+                <div class="section-hero__title title"><img
+                        src="./src/img/section-hero/New Automation Tool for Your Home.svg" alt=""></div>
+                <div class="section-hero__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Faucibus
+                    tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</div>
+                <div class="section-hero__btn section-hero__btn_hover btn">See Our Project</div>
+            </div>
+            <div class="section-hero__picture">
                 <svg width="688" height="590" viewBox="0 0 688 590" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="border" opacity="0.4"
                         d="M624.607 41.4102C479.832 -27.4825 415.969 160.909 316.138 191.906C216.394 237.253 120.215 184.176 60.8283 229.674C-33.3064 301.794 8.01039 427.963 68.2737 481.05C154.694 557.18 308.272 529.78 467.012 447.462C665.894 344.329 751.55 101.817 624.607 41.4102Z"
@@ -332,86 +332,27 @@
                     </defs>
                 </svg>
             </div>
-
         </div>
     </section>
     <!--xxx Section-hero xxx-->
 
     <!--x-- Section-aboutUs --x-->
-    <div class="section-aboutUs">
-        <div class="section-inner">
-            <div class="section-inner__title">What we do to help our client grow in digital era,</div>
 
-            <div class="section-inner-infoBlock first">
-                <div class="section-inner-infoBlock-inner">
-                    <div class="section-inner-infoBlock-inner__picture">
-                        <img class="picture" src="./src/img/svg/1.svg" alt="">
-                    </div>
-                    <div class="wrapper">
-                        <div class="wrapper__title">Bring Technology To Your Comfrotable Home</div>
-                        <div class="wrapper__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                        <div class="btn"><a href="#">Learn more</a><img src="./src/img/svg/arrow.svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-inner-infoBlock second">
-                <div class="section-inner-infoBlock-inner">
-                    <div class="section-inner-infoBlock-inner__picture">
-                        <img class="picture" src="./src/img/svg/2.svg" alt="">
-                    </div>
-                    <div class="wrapper">
-                        <div class="wrapper__title">Make Your business To Be Better Famous In Internet</div>
-                        <div class="wrapper__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                        <div class="btn"><a href="#">Learn more</a><img src="./src/img/svg/arrow.svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-inner-infoBlock third">
-                <div class="section-inner-infoBlock-inner">
-                    <div class="section-inner-infoBlock-inner__picture">
-                        <img class="picture" src="./src/img/svg/3.svg" alt="">
-                    </div>
-                    <div class="wrapper">
-                        <div class="wrapper__title">Build Your Digital Product That Suitable For Your Need</div>
-                        <div class="wrapper__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                        <div class="btn"><a href="#">Learn more</a><img src="./src/img/svg/arrow.svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--xxx Section-aboutUs xxx-->
 
     <!--x-- Our projects --x-->
-    <div class="section-ourProjects">
-        <div class="section-inner">
-            <div class="section-inner-header">
-                <div class="section-inner-header__title">Our Finished Project</div>
-                <div class="section-inner-header__subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.
-                </div>
-            </div>
-            <div class="section-inner-projects">
-                <div class="section-inner-projects-main">
-                    <img src="./src/img/all/bg.png" alt="">
-                    <div class="wrapper">
-                        <div class="wrapper__title">Smart Home Installation</div>
-                        <div class="wrapper__subtitle">In Muarakana Housing Estate</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!--xxx Our projects xxx-->
 
     <section class="modal">
-        <div class="close">X</div>
+        <div class="modal__close"> <img src="./src/img/svg/arrow.svg" alt=""> </div>
+        <div class="modal__inner">
+            <div class="modal__info">This site is a free mock-up for training :)</div>
+            <div class="modal__btn btn"><a
+                    href="https://www.figma.com/file/vRMJVq9Byaw7lHp9O5Dzlz/afrianska-landingpage?node-id=0%3A1">Go to
+                    Figma</a>
+            </div>
+        </div>
     </section>
 
     <!--x-- Scripts  --x-->
