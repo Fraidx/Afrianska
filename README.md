@@ -3,7 +3,7 @@ This is free template for training. I use SVG, animations with svg, BEM methodto
 
  ### Information
 
-  > [Site](https://fraidx.github.io/Afrianska/)
+  > [Site](https://triplicates.github.io/Afrianska/)
 
   > [Template by Afrianska](https://clck.ru/MBE6M)
  
