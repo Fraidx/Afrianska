@@ -1,10 +1,13 @@
 // Links all styles
 @import "../css/fonts.css";
 
+// Link all mixin
 @import "./mixins.scss";
 
+// Link first section
 @import "./section-hero.scss";
-
+// Limk second section
 @import "./section-whatWeDo.scss";
 
+// Link styles for modal window
 @import "./modal.scss";
