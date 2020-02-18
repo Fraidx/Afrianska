@@ -1,8 +1,5 @@
-window.onload = () => {
-  scrollTo(0, 0);
-};
-
-function modal() {
+// Modal window
+(() => {
   let modal = document.querySelector(".modal");
   let closebtn = document.querySelector(".modal__close");
   let openbtn = document.querySelector(".menu");
@@ -18,5 +15,6 @@ function modal() {
     openbtn.style.display = "none";
     document.body.style.overflowY = "hidden";
   });
-}
-modal();
+})();
+
+// Show navigation when scrolled u p
