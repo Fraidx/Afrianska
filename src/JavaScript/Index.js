@@ -1,3 +1,12 @@
+// Preloader
+window.addEventListener("load", () => {
+  let preloader = document.querySelector(".preloader");
+  preloader.classList.add("hidde");
+  setTimeout(() => {
+    preloader.style.display = "none";
+    preloader.remove();
+  }, 600);
+});
 // Modal window
 (() => {
   let modal = document.querySelector(".modal");
