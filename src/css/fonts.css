@@ -1,8 +1,10 @@
 @font-face {
   font-family: "Gilroy-Bold";
   src: url("../fonts/Gilroy/Gilroy-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy-Regular";
   src: url("../fonts/Gilroy/Gilroy-Regular.ttf");
+  font-display: swap;
 }

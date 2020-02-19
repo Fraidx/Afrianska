@@ -17,4 +17,12 @@
   });
 })();
 
-// Show navigation when scrolled u p
+// Scrolled for WhatWeDo section
+let btn = document.querySelector(".section-hero__btn");
+let section = document.querySelector(".section-whatWeDo");
+btn.addEventListener("click", () => {
+  section.scrollIntoView({
+    block: "start",
+    behavior: "smooth"
+  });
+});
