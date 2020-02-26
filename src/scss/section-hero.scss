@@ -47,6 +47,8 @@
     line-height: 74px;
   }
   &__subtitle {
+    width: 425px;
+    height: 82px;
     margin-top: 32px;
   }
   &__picture {
@@ -72,8 +74,6 @@
 }
 .subtitle {
   @include subtitles;
-  width: 425px;
-  height: 82px;
 }
 .btn {
   width: 220px;

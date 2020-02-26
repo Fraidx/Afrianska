@@ -11,6 +11,8 @@
     min-height: 1162px;
   }
   &__title {
+    width: 358px;
+    height: 138px;
     position: absolute;
     top: 0;
     left: 0;
@@ -41,8 +43,6 @@
   }
 }
 .title {
-  width: 358px;
-  height: 138px;
   @include titles;
 }
 
