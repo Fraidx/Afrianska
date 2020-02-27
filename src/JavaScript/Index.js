@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
     preloader.remove();
   }, 600);
 });
+
 // Modal window
 (() => {
   let modal = document.querySelector(".modal");
@@ -34,4 +35,16 @@ btn.addEventListener("click", () => {
     block: "start",
     behavior: "smooth"
   });
+});
+
+// Animation for sections with AOS
+AOS.init({
+  disable: false,
+  startEvent: "DOMContentLoaded",
+  initClassName: "aos-init",
+  animatedClassName: "aos-animate",
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99
 });

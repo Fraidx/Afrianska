@@ -5,9 +5,7 @@
   width: 100%;
   min-height: 100%;
   &__inner {
-    margin: 0 auto;
-    height: 100%;
-    width: 940px;
+    @include container;
   }
   &__title {
     flex-basis: 30%;

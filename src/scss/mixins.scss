@@ -13,3 +13,8 @@
   letter-spacing: 0.05em;
   color: #316099;
 }
+@mixin container {
+  margin: 0 auto;
+  width: 940px;
+  height: 100%;
+}
