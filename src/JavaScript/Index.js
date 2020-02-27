@@ -38,7 +38,7 @@ btn.addEventListener("click", () => {
 });
 
 // Animation for sections with AOS
-AOS.init({
+/* AOS.init({
   disable: false,
   startEvent: "DOMContentLoaded",
   initClassName: "aos-init",
@@ -47,4 +47,4 @@ AOS.init({
   disableMutationObserver: false,
   debounceDelay: 50,
   throttleDelay: 99
-});
+}); */
