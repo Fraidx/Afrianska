@@ -1,12 +1,14 @@
 # Afrianska
-This is free template for training. I use SVG, animations with svg, BEM methodtology and just practice JS. 
+See a work: https://triplicates.github.io/Afrianska/
+Mackup by Afrianska: https://bit.ly/3cNCxg0 
 
- ### Information
-
-  > [Site](https://triplicates.github.io/Afrianska/)
-
-  > [Template by Afrianska](https://clck.ru/MBE6M)
+ ### Description
+ This site is free mackup for training my skills. I use HTML, CSS(Scss), native JavaScript and met with library AOS. 
+ *The project is not complete and improvements may be made soon
  
  ### The final layout
  
  ![Afrianska](./src/img/all/homepage.png)
+ 
+  ### Author 
+  (C) 2020 Sergeev Danil | telegram: @triplicates
