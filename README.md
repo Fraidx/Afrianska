@@ -8,7 +8,7 @@ Mackup by Afrianska: https://bit.ly/3cNCxg0
  
  *The project is not complete and improvements maybe made soon
  
- ### The final layout
+ ### Screenshot
  
  ![Afrianska](./src/img/all/homepage.png)
  
