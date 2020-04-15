@@ -13,4 +13,4 @@ Mackup by Afrianska: https://bit.ly/3cNCxg0
  ![Afrianska](./src/img/all/homepage.png)
  
   ### Author 
-  (C) 2020 Sergeev Danil | telegram: @triplicates
+  (C) 2020 Sergeev Danil | telegram: @triplicatesouls
