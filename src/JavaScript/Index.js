@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
 
 // Scrolled for WhatWeDo section
 let btn = document.querySelector(".section-hero__btn");
-let section = document.querySelector(".section-ourProjects");
+let section = document.querySelector(".section-ourProjects__header");
 btn.addEventListener("click", () => {
   section.scrollIntoView({
     block: "start",
