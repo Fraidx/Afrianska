@@ -1,5 +1,5 @@
 # Afrianska
-See a work: https://triplicates.github.io/Afrianska/
+See a work: https://tripplicate.github.io/Afrianska/
 
 Mackup by Afrianska: https://bit.ly/3cNCxg0 
 
